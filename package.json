@@ -1,0 +1,47 @@
+{
+	"name": "wp-release-it",
+	"version": "0.0.1",
+	"description": "WordPress plugin release automation that works.",
+	"license": "MIT",
+	"repository": "ahmadawais/wp-release-it",
+	"author": {
+		"name": "Ahmad Awais",
+		"email": "me@AhmadAwais.com",
+		"url": "https://twitter.com/MrAhmadAwais"
+	},
+	"bin": {
+		"wp-release-it": "index.js"
+	},
+	"main": "index.js",
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"wp-release-it",
+		"Ahmad Awais",
+		"ahmadawais"
+	],
+	"scripts": {
+		"test": "node test.js"
+	},
+	"dependencies": {
+		"await-to-js": "^2.1.1",
+		"axios": "^0.19.2",
+		"chalk": "^3.0.0",
+		"cli-a11y": "^1.0.0",
+		"cli-handle-error": "^1.0.0",
+		"cli-should-cancel": "^1.0.0",
+		"cli-welcome": "^1.4.0",
+		"enquirer": "^2.3.4",
+		"meow": "^6.0.1",
+		"ora": "^4.0.3",
+		"semver": "^7.1.3",
+		"update-notifier": "^4.1.0",
+		"wp-file-header-metadata": "^3.0.0"
+	},
+	"devDependencies": {
+		"eslint-config-prettier": "^6.10.0",
+		"eslint-plugin-prettier": "^3.1.2",
+		"prettier": "^1.19.1"
+	}
+}
