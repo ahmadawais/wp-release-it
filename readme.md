@@ -57,6 +57,8 @@ npx wp-release-it -t 2.5.0 -l
 npx wp-release-it --help
 ```
 
+👋 **MOAR**: There's more to come. I use `wp-release-it` by first setting up [`wp-continuous-deployment`](https://github.com/ahmadawais/wp-continuous-deployment) and I am still considering adding the ability to auto `git tag` and `git commit` the release. Provide me feedback on this via [Twitter →](https://twitter.com/MrAhmadAwais/)
+
 <br>
 
 [![📝](https://raw.githubusercontent.com/ahmadawais/stuff/master/images/git/log.png)](changelog.md)
