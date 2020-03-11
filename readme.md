@@ -1,4 +1,4 @@
-<h1 align="center">
+<p align="center">
     <a href="https://github.com/ahmadawais/wp-release-it">
         <img src="./.github/logo.png" alt="wp-release-it" width="750px" />
     </a>
@@ -7,13 +7,18 @@
 [![DOWNLOADS](https://img.shields.io/npm/dt/wp-release-it?label=DOWNLOADS%20%20❯&colorA=FF5722&colorB=FF5722&style=flat)](https://www.npmjs.com/package/wp-release-it) [![Learn VSCode](https://img.shields.io/badge/-VSCODE.pro%20%E2%86%92-gray.svg?colorB=FF5722&style=flat)](https://VSCode.pro/?utm_source=GitHubFOSS)
 [![Follow @MrAhmadAwais on Twitter](https://img.shields.io/badge/FOLLOW%20@MRAHMADAWAIS%20%E2%86%92-gray.svg?colorA=FF5722&colorB=FF5722&style=flat)](https://twitter.com/mrahmadawais/)
 
-`wp-release-it`
+</p>
 
-</h1>
 
 <p align="center">
 WordPress plugin release automation that works.
 </p>
+
+# wp-release-it
+
+- 🚀 Update your WordPress plugin version with ease.
+- 🤯 Define custom version of the "Tested up to" version
+- 🤖 Update the "Tested up to" version to the latest version of WordPress.
 
 <br>
 
