@@ -1,9 +1,20 @@
-# wp-release-it
+<p align="center">
+  <br>
+  <a href="https://github.com/ahmadawais/wp-release-it">
+    <img src="./.github/logo.png" width="120"/>
+  </a>
+</p>
+
+<h1 align="center"><code>wp-release-it</code></h1>
+
+<p align="center">
 
 [![DOWNLOADS](https://img.shields.io/npm/dt/wp-release-it?label=DOWNLOADS%20%20❯&colorA=6A788D&colorB=6A788D&style=flat)](https://www.npmjs.com/package/wp-release-it) [![Learn VSCode](https://img.shields.io/badge/-VSCODE.pro%20%E2%86%92-gray.svg?colorB=6A788D&style=flat)](https://VSCode.pro/?utm_source=GitHubFOSS)
 [![Follow @MrAhmadAwais on Twitter](https://img.shields.io/badge/FOLLOW%20@MRAHMADAWAIS%20%E2%86%92-gray.svg?colorA=6A788D&colorB=6A788D&style=flat)](https://twitter.com/mrahmadawais/)
 
 > WordPress plugin release automation that works.
+
+</p>
 
 <br>
 
