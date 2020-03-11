@@ -21,16 +21,6 @@ WordPress plugin release automation that works.
 
 <br>
 
-[![📟](https://raw.githubusercontent.com/ahmadawais/stuff/master/images/git/install.png)](./../../)
-
-## Install
-
-```sh
-npx wp-release-it
-```
-
-<br>
-
 [![⚙️](https://raw.githubusercontent.com/ahmadawais/stuff/master/images/git/usage.png)](./../../)
 
 ## Usage
