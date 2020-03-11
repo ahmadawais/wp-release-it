@@ -29,6 +29,18 @@ I have released a video course to help you become a better developer — <a href
 
 <br>
 
+### RELEASE: [0.2.0](https://github.com/ahmadawais/wp-release-it/compare/0.1.0...0.2.0)
+
+![🐛 FIX:](https://img.shields.io/badge/-FIX-gray.svg?colorB=ff6347)
+
+> 🐛 Chalk and PkgJSON [`adfb747`](https://github.com/ahmadawais/wp-release-it/commit/adfb747b0bdf2ea3191bd176e47fb54ec83e9a04) <br>
+
+<br>
+
+[![hr](https://raw.githubusercontent.com/ahmadawais/stuff/master/images/git/hr.png)](/)
+
+<br>
+
 ### RELEASE: 0.1.0
 
 ![📦 NEW:](https://img.shields.io/badge/-NEW-gray.svg?colorB=3778FF)
@@ -45,6 +57,7 @@ I have released a video course to help you become a better developer — <a href
 ![📖 DOC:](https://img.shields.io/badge/-DOCS-gray.svg?colorB=978CD4)
 
 >  📖 Changelog [`716d20a`](https://github.com/ahmadawais/wp-release-it/commit/716d20a1dc03f4af4d1efe1ecc4016c8a6572808) <br>
+> 📖 Changelog update [`951e51a`](https://github.com/ahmadawais/wp-release-it/commit/951e51a5711dd6e69522adeaeeda1dd390139f5c) <br>
 
 <br>
 
