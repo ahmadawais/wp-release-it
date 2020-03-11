@@ -29,11 +29,22 @@ I have released a video course to help you become a better developer — <a href
 
 <br>
 
-### RELEASE: 0.0.1
+### RELEASE: 0.1.0
 
 ![📦 NEW:](https://img.shields.io/badge/-NEW-gray.svg?colorB=3778FF)
 
 > 📦 First version [`4cc0acd`](https://github.com/ahmadawais/wp-release-it/commit/4cc0acdbd76910e56d6cfeee5d0240c869ccc99a) <br>
+> 📦 Tag handling [`198c06b`](https://github.com/ahmadawais/wp-release-it/commit/198c06b5f638cf334b57b8851c721722078c3651) <br>
+> 📦 Init [`db6a8fb`](https://github.com/ahmadawais/wp-release-it/commit/db6a8fbfd06447c1199ca206ee69f8c31ac088a7) <br>
+
+![👌 IMPROVE:](https://img.shields.io/badge/-IMPROVEMENT-gray.svg?colorB=39AA54)
+
+> 👌 Tested up to handling [`838c62d`](https://github.com/ahmadawais/wp-release-it/commit/838c62def73d42ba93874707e33fcf44cfae5656) <br>
+> 👌 Tested up to [`42406d9`](https://github.com/ahmadawais/wp-release-it/commit/42406d91ccab78740a22b9754060b17653675023) <br>
+
+![📖 DOC:](https://img.shields.io/badge/-DOCS-gray.svg?colorB=978CD4)
+
+>  📖 Changelog [`716d20a`](https://github.com/ahmadawais/wp-release-it/commit/716d20a1dc03f4af4d1efe1ecc4016c8a6572808) <br>
 
 <br>
 
