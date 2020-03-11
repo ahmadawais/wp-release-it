@@ -74,7 +74,6 @@ const cli = meow(
 );
 
 (async () => {
-	init();
 	welcome(
 		`wp-release-it`,
 		`by Awais.dev\n${dim(
