@@ -1,4 +1,4 @@
-<p align="center">
+<h4 align="center">
     <a href="https://github.com/ahmadawais/wp-release-it">
         <img src="./.github/logo.png" alt="wp-release-it" width="750px" />
     </a>
@@ -9,8 +9,7 @@
 
 WordPress plugin release automation that works.
 
-</p>
-
+</h4>
 
 # wp-release-it
 
