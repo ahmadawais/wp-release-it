@@ -29,6 +29,18 @@ I have released a video course to help you become a better developer — <a href
 
 <br>
 
+### RELEASE: [0.4.0](https://github.com/ahmadawais/wp-release-it/compare/0.3.0...0.4.0)
+
+![📖 DOC:](https://img.shields.io/badge/-DOCS-gray.svg?colorB=978CD4)
+
+> 📖 Note MOAR [`74b0e36`](https://github.com/ahmadawais/wp-release-it/commit/74b0e36a3e801ca2aba5aa7dda6587aa0e23be3d) <br>
+
+<br>
+
+[![hr](https://raw.githubusercontent.com/ahmadawais/stuff/master/images/git/hr.png)](/)
+
+<br>
+
 ### RELEASE: [0.3.0](https://github.com/ahmadawais/wp-release-it/compare/0.2.0...0.3.0)
 
 ![📦 NEW:](https://img.shields.io/badge/-NEW-gray.svg?colorB=3778FF)
@@ -57,6 +69,7 @@ I have released a video course to help you become a better developer — <a href
 
 ![📖 DOC:](https://img.shields.io/badge/-DOCS-gray.svg?colorB=978CD4)
 
+> 📖 Changelog update [`ca0496d`](https://github.com/ahmadawais/wp-release-it/commit/ca0496d1de009e604e0c25484d881600658c3672) <br>
 > 📖 Data on usage [`0f9c4fe`](https://github.com/ahmadawais/wp-release-it/commit/0f9c4fef01b778ab4332f3f2638a55d6be6bf5c6) <br>
 
 <br>
