@@ -29,11 +29,51 @@ I have released a video course to help you become a better developer — <a href
 
 <br>
 
+### RELEASE: [0.3.0](https://github.com/ahmadawais/wp-release-it/compare/0.2.0...0.3.0)
+
+![📦 NEW:](https://img.shields.io/badge/-NEW-gray.svg?colorB=3778FF)
+
+> 📦 Logo [`2f63b4e`](https://github.com/ahmadawais/wp-release-it/commit/2f63b4ea189d3072bac5fa8fd2f675b6e7984d0b) <br>
+> 📦 Let it go [`b01077b`](https://github.com/ahmadawais/wp-release-it/commit/b01077ba95b3a95dc2a3ccf22f9efd8b18e2e81c) <br>
+
+![👌 IMPROVE:](https://img.shields.io/badge/-IMPROVEMENT-gray.svg?colorB=39AA54)
+
+> 👌 Docs [`c942102`](https://github.com/ahmadawais/wp-release-it/commit/c942102677d72fd4f09f3e7e06ef84a4e606474a) <br>
+> 👌 Badge color [`5d2fce5`](https://github.com/ahmadawais/wp-release-it/commit/5d2fce5a11041838a98166a2ce0a38fc0b315b67) <br>
+> 👌 Badge color [`76c73af`](https://github.com/ahmadawais/wp-release-it/commit/76c73afe4c9ddc1c822bd63a863d50c9eb15d025) <br>
+> 👌 Badge color [`9a68f99`](https://github.com/ahmadawais/wp-release-it/commit/9a68f99745747005a66c3368bd81af1d7c98db99) <br>
+> 👌 Width [`21443bb`](https://github.com/ahmadawais/wp-release-it/commit/21443bbe447c80564a4cc79858d345861bd16ae1) <br>
+> 👌 a11y [`1001b29`](https://github.com/ahmadawais/wp-release-it/commit/1001b29459a9a97fe41ee100a67c73c591bfc831) <br>
+
+![🐛 FIX:](https://img.shields.io/badge/-FIX-gray.svg?colorB=ff6347)
+
+> 🐛 Doc [`d856c3a`](https://github.com/ahmadawais/wp-release-it/commit/d856c3a9cf6265d0f17364c6caca5567aae938bb) <br>
+> 🐛 HTML [`3461263`](https://github.com/ahmadawais/wp-release-it/commit/3461263eb8f557ba1bb71d650be3ae811e36b784) <br>
+> 🐛 HTML [`f1ebd21`](https://github.com/ahmadawais/wp-release-it/commit/f1ebd210f6e953af01b21c7aefa561491eaf5cd6) <br>
+> 🐛 HTML [`2e76d8a`](https://github.com/ahmadawais/wp-release-it/commit/2e76d8a2d3970727082f6acbac74c185706c0f2f) <br>
+> 🐛 Doc [`ed374df`](https://github.com/ahmadawais/wp-release-it/commit/ed374dffff0797cb1e65ef0d4d8a3f295683c2c6) <br>
+> 🐛 HTML [`a05001d`](https://github.com/ahmadawais/wp-release-it/commit/a05001db453ad8ad27291b7be7d1feed0d19b1f3) <br>
+> 🐛 HTML [`6d301d1`](https://github.com/ahmadawais/wp-release-it/commit/6d301d1219ea467bf6b810c9e810dac0fff0b4f3) <br>
+
+![📖 DOC:](https://img.shields.io/badge/-DOCS-gray.svg?colorB=978CD4)
+
+> 📖 Data on usage [`0f9c4fe`](https://github.com/ahmadawais/wp-release-it/commit/0f9c4fef01b778ab4332f3f2638a55d6be6bf5c6) <br>
+
+<br>
+
+[![hr](https://raw.githubusercontent.com/ahmadawais/stuff/master/images/git/hr.png)](/)
+
+<br>
+
 ### RELEASE: [0.2.0](https://github.com/ahmadawais/wp-release-it/compare/0.1.0...0.2.0)
 
 ![🐛 FIX:](https://img.shields.io/badge/-FIX-gray.svg?colorB=ff6347)
 
 > 🐛 Chalk and PkgJSON [`adfb747`](https://github.com/ahmadawais/wp-release-it/commit/adfb747b0bdf2ea3191bd176e47fb54ec83e9a04) <br>
+
+![📖 DOC:](https://img.shields.io/badge/-DOCS-gray.svg?colorB=978CD4)
+
+> 📖 Changelog update [`b9d0871`](https://github.com/ahmadawais/wp-release-it/commit/b9d0871132f6a332e88c304e800f12eca63d36e3) <br>
 
 <br>
 
