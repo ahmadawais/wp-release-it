@@ -28,7 +28,7 @@
 		"await-to-js": "^2.1.1",
 		"axios": "^0.19.2",
 		"chalk": "^3.0.0",
-		"cli-a11y": "^1.0.0",
+		"cli-a11y": "^1.1.0",
 		"cli-handle-error": "^1.0.0",
 		"cli-should-cancel": "^1.0.0",
 		"cli-welcome": "^1.4.0",

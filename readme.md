@@ -23,8 +23,8 @@ npx wp-release-it
 
 Release a new version of your WordPress plugins or just update the `Tested up to` WordPress version.
 
-- `--latest`, `-l` Update to latest WordPress version.
-- `--custom`, `-c` Update to a custom WordPress version.
+- `--latest`, `-l` Update "Tested up to" to the latest WordPress version.
+- `--custom`, `-c` Update "Tested up to" to a custom WordPress version.
 - `--tag`,    `-t` Release a new version of the WordPress plugin.
 
 ```sh
@@ -44,6 +44,10 @@ npx wp-release-it -c 5.4.0
 # 3. Release a new version of the WordPress plugin.
 npx wp-release-it --tag 2.5.0
 npx wp-release-it -t 2.5.0
+
+# 4. You can also run multiple commands at once:
+npx wp-release-it -t 2.5.0 -c 5.4.0
+npx wp-release-it -t 2.5.0 -l
 
 # Help/usage.
 npx wp-release-it --help

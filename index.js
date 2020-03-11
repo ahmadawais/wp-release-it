@@ -9,21 +9,24 @@ process.on('unhandledRejection', err => {
 
 const meow = require('meow');
 const cliA11y = require('cli-a11y');
+const init = require('./utils/init.js');
 const logSymbols = require('log-symbols');
 const promptClone = require('./utils/promptClone.js');
 const promptCustom = require('./utils/promptCustom.js');
-const printCurrentVersion = require('./utils/printCurrentVersion.js');
+const promptTagRelease = require('./utils/promptTagRelease.js');
+const promptTestedUpto = require('./utils/promptTestedUpto.js');
+const printTestedUptoVersion = require('./utils/printTestedUptoVersion.js');
 const verValid = require('./utils/verValid.js');
 const getCustomVersion = require('./utils/getCustomVersion.js');
-const setVersion = require('./utils/setVersion.js');
+const setTestedUptoVersion = require('./utils/setTestedUptoVersion.js');
 const getWPVersion = require('./utils/getWPVersion.js');
 const setPluginVersion = require('./utils/setPluginVersion.js');
 const updateNotifier = require('update-notifier');
 const pkgJSON = require('./package.json');
 const handleError = require('cli-handle-error');
-const welcome = require('cli-welcome');
 const chalk = require('chalk');
 const green = chalk.bold.green;
+const yellow = chalk.bold.yellow;
 const dim = chalk.dim;
 
 const cli = meow(
@@ -32,12 +35,21 @@ const cli = meow(
 	  ${green(`wp-release-it`)}
 
 	Options
-	  --latest, -l  Update to latest WordPress version.
-	  --custom, -c  Update to a custom WordPress version.
+	  --latest, -l  Update "Tested up to" to the latest WordPress version.
+	  --custom, -c  Update "Tested up to" to a custom WordPress version.
 	  --tag,    -t  Release a new version of the WordPress plugin.
 
 	Example
-	  ${green(`wp-release-it`)}
+	  ${green(`wp-release-it`)} ${yellow(`--latest`)}
+	  ${green(`wp-release-it`)} ${yellow(`-l`)}
+	  ${green(`wp-release-it`)} ${yellow(`--custom`)} 5.4.0
+	  ${green(`wp-release-it`)} ${yellow(`-c`)} 5.4.0
+	  ${green(`wp-release-it`)} ${yellow(`--tag`)} 1.5.2
+	  ${green(`wp-release-it`)} ${yellow(`-t`)} 1.5.2
+
+	❯ You can also run multiple commands at once:
+	  ${green(`wp-release-it`)} ${yellow(`--tag`)} 1.5.2 ${yellow(`-c`)} 5.4.0
+	  ${green(`wp-release-it`)} ${yellow(`--tag`)} 1.5.2 ${yellow(`-l`)}
 `,
 	{
 		booleanDefault: undefined,
@@ -62,19 +74,7 @@ const cli = meow(
 );
 
 (async () => {
-	welcome(
-		`wp-release-it`,
-		`by Awais.dev\n${dim(
-			`Stargaze the repo for updates ↓\nhttps://github.com/ahmadawais/wp-release-it`
-		)}`,
-		{
-			bgColor: `#d54e21`,
-			color: `#FFFFFF`,
-			bold: true,
-			clear: true,
-			version: `v${pkgJSON.version}`
-		}
-	);
+	init();
 	updateNotifier({
 		pkg: pkgJSON,
 		shouldNotifyInNpmScript: true
@@ -85,15 +85,15 @@ const cli = meow(
 
 	// Power mode.
 	if (latest) {
-		await printCurrentVersion();
+		await printTestedUptoVersion();
 		const wpVersion = await getWPVersion();
-		await setVersion(wpVersion);
+		await setTestedUptoVersion(wpVersion);
 	}
 
 	if (customVersion) {
-		await printCurrentVersion();
+		await printTestedUptoVersion();
 		await verValid(customVersion);
-		await setVersion(customVersion);
+		await setTestedUptoVersion(customVersion);
 	}
 
 	if (tag) {
@@ -105,17 +105,23 @@ const cli = meow(
 	if (!latest && !customVersion && !tag) {
 		cliA11y({ toggle: true });
 		await promptClone();
-		await printCurrentVersion();
-		const custom = await promptCustom();
+		const didRelease = await promptTagRelease();
+		if (!didRelease) {
+			const updateTestedUpto = await promptTestedUpto();
+			if (updateTestedUpto) {
+				await printTestedUptoVersion();
+				const customTestedUpto = await promptCustom();
 
-		if (custom) {
-			const newVersion = await getCustomVersion();
-			await setVersion(newVersion);
-		}
+				if (customTestedUpto) {
+					const newVersion = await getCustomVersion();
+					await setTestedUptoVersion(newVersion);
+				}
 
-		if (!custom) {
-			const wpVersion = await getWPVersion();
-			await setVersion(wpVersion);
+				if (!customTestedUpto) {
+					const wpVersion = await getWPVersion();
+					await setTestedUptoVersion(wpVersion);
+				}
+			}
 		}
 	}
 
