@@ -1,6 +1,6 @@
 <h1 align="center">
     <a href="https://github.com/ahmadawais/wp-release-it">
-        <img src="./.github/logo.png"/>
+        <img src="./.github/logo.png" alt="wp-release-it" />
     </a>
     <br>
 
