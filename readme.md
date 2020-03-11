@@ -11,6 +11,8 @@ WordPress plugin release automation that works.
 
 </h4>
 
+<br>
+
 # wp-release-it
 
 - 🚀 Update your WordPress plugin version with ease.
