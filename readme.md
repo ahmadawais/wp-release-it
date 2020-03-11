@@ -1,7 +1,7 @@
 <p align="center">
   <br>
   <a href="https://github.com/ahmadawais/wp-release-it">
-    <img src="./.github/logo.png" width="120"/>
+    <img src="./.github/logo.png"/>
   </a>
 </p>
 
