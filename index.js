@@ -9,7 +9,7 @@ process.on('unhandledRejection', err => {
 
 const meow = require('meow');
 const cliA11y = require('cli-a11y');
-const init = require('./utils/init.js');
+const welcome = require('cli-welcome');
 const logSymbols = require('log-symbols');
 const promptClone = require('./utils/promptClone.js');
 const promptCustom = require('./utils/promptCustom.js');
@@ -75,6 +75,19 @@ const cli = meow(
 
 (async () => {
 	init();
+	welcome(
+		`wp-release-it`,
+		`by Awais.dev\n${dim(
+			`Stargaze the repo for updates ↓\nhttps://github.com/ahmadawais/wp-release-it`
+		)}`,
+		{
+			bgColor: `#d54e21`,
+			color: `#FFFFFF`,
+			bold: true,
+			clear: true,
+			version: `v${pkgJSON.version}`
+		}
+	);
 	updateNotifier({
 		pkg: pkgJSON,
 		shouldNotifyInNpmScript: true
