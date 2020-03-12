@@ -1,4 +1,5 @@
 const getPluginVersion = require('./getPluginVersion.js');
+const gitPluginRelease = require('./gitPluginRelease.js');
 const setPluginVersion = require('./setPluginVersion.js');
 const semverValid = require('semver/functions/valid');
 const shouldCancel = require('cli-should-cancel');
@@ -43,6 +44,7 @@ module.exports = async () => {
 
 		// Set it.
 		await setPluginVersion(newVersion);
+		await gitPluginRelease(newVersion);
 		didRelease = true;
 	}
 	return didRelease;

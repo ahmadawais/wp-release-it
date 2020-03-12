@@ -36,6 +36,7 @@
 		"meow": "^6.0.1",
 		"ora": "^4.0.3",
 		"semver": "^7.1.3",
+		"simple-git": "^1.132.0",
 		"update-notifier": "^4.1.0",
 		"wp-file-header-metadata": "^3.0.0"
 	},

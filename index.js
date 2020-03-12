@@ -7,71 +7,29 @@ process.on('unhandledRejection', err => {
 	handleError(`UNHANDLED ERROR`, err);
 });
 
-const meow = require('meow');
 const cliA11y = require('cli-a11y');
 const welcome = require('cli-welcome');
 const logSymbols = require('log-symbols');
+const inc = require('semver/functions/inc');
 const promptClone = require('./utils/promptClone.js');
 const promptCustom = require('./utils/promptCustom.js');
 const promptTagRelease = require('./utils/promptTagRelease.js');
 const promptTestedUpto = require('./utils/promptTestedUpto.js');
+const getPluginVersion = require('./utils/getPluginVersion.js');
 const printTestedUptoVersion = require('./utils/printTestedUptoVersion.js');
 const verValid = require('./utils/verValid.js');
 const getCustomVersion = require('./utils/getCustomVersion.js');
 const setTestedUptoVersion = require('./utils/setTestedUptoVersion.js');
 const getWPVersion = require('./utils/getWPVersion.js');
 const setPluginVersion = require('./utils/setPluginVersion.js');
+const gitPluginRelease = require('./utils/gitPluginRelease.js');
 const updateNotifier = require('update-notifier');
 const pkgJSON = require('./package.json');
 const handleError = require('cli-handle-error');
+const cli = require('./utils/cli.js');
 const chalk = require('chalk');
 const green = chalk.bold.green;
-const yellow = chalk.bold.yellow;
 const dim = chalk.dim;
-
-const cli = meow(
-	`
-	Usage
-	  ${green(`wp-release-it`)}
-
-	Options
-	  --latest, -l  Update "Tested up to" to the latest WordPress version.
-	  --custom, -c  Update "Tested up to" to a custom WordPress version.
-	  --tag,    -t  Release a new version of the WordPress plugin.
-
-	Example
-	  ${green(`wp-release-it`)} ${yellow(`--latest`)}
-	  ${green(`wp-release-it`)} ${yellow(`-l`)}
-	  ${green(`wp-release-it`)} ${yellow(`--custom`)} 5.4.0
-	  ${green(`wp-release-it`)} ${yellow(`-c`)} 5.4.0
-	  ${green(`wp-release-it`)} ${yellow(`--tag`)} 1.5.2
-	  ${green(`wp-release-it`)} ${yellow(`-t`)} 1.5.2
-
-	❯ You can also run multiple commands at once:
-	  ${green(`wp-release-it`)} ${yellow(`--tag`)} 1.5.2 ${yellow(`-c`)} 5.4.0
-	  ${green(`wp-release-it`)} ${yellow(`--tag`)} 1.5.2 ${yellow(`-l`)}
-`,
-	{
-		booleanDefault: undefined,
-		hardRejection: false,
-		inferType: false,
-		flags: {
-			latest: {
-				type: 'boolean',
-				default: false,
-				alias: 'l'
-			},
-			custom: {
-				type: 'string',
-				alias: 'c'
-			},
-			tag: {
-				type: 'string',
-				alias: 't'
-			}
-		}
-	}
-);
 
 (async () => {
 	welcome(
@@ -91,11 +49,26 @@ const cli = meow(
 		pkg: pkgJSON,
 		shouldNotifyInNpmScript: true
 	}).notify({ isGlobal: true });
+	const [command] = cli.input;
 	const latest = cli.flags.latest;
 	const customVersion = cli.flags.custom;
 	const tag = cli.flags.tag;
 
 	// Power mode.
+	if (command) {
+		const prev = await getPluginVersion();
+		const newVersion = inc(prev, command);
+		await verValid(newVersion);
+		await setPluginVersion(newVersion);
+		await gitPluginRelease(newVersion);
+	}
+
+	if (tag) {
+		await verValid(tag);
+		await setPluginVersion(tag);
+		await gitPluginRelease(tag);
+	}
+
 	if (latest) {
 		await printTestedUptoVersion();
 		const wpVersion = await getWPVersion();
@@ -108,13 +81,8 @@ const cli = meow(
 		await setTestedUptoVersion(customVersion);
 	}
 
-	if (tag) {
-		await verValid(tag);
-		await setPluginVersion(tag);
-	}
-
 	// Interactive mode.
-	if (!latest && !customVersion && !tag) {
+	if (!latest && !customVersion && !tag && !command) {
 		cliA11y({ toggle: true });
 		await promptClone();
 		const didRelease = await promptTagRelease();
