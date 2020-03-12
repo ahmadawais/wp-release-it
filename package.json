@@ -1,6 +1,6 @@
 {
 	"name": "wp-release-it",
-	"version": "0.5.0",
+	"version": "0.6.0",
 	"description": "WordPress plugin release automation that works.",
 	"license": "MIT",
 	"repository": "ahmadawais/wp-release-it",
