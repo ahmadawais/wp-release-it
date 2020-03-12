@@ -29,11 +29,27 @@ I have released a video course to help you become a better developer — <a href
 
 <br>
 
+### RELEASE: [0.5.0](https://github.com/ahmadawais/wp-release-it/compare/0.4.2...0.5.0)
+
+![📦 NEW:](https://img.shields.io/badge/-NEW-gray.svg?colorB=3778FF)
+
+> 📦 Commands [`9cfcc6e`](https://github.com/ahmadawais/wp-release-it/commit/9cfcc6e6ad0eb3c22d37881538b59d94c291517f) <br>
+
+<br>
+
+[![hr](https://raw.githubusercontent.com/ahmadawais/stuff/master/images/git/hr.png)](/)
+
+<br>
+
 ### RELEASE: [0.4.2](https://github.com/ahmadawais/wp-release-it/compare/0.4.1...0.4.2)
 
 ![🐛 FIX:](https://img.shields.io/badge/-FIX-gray.svg?colorB=ff6347)
 
 > 🐛 Init [`f9d4ec1`](https://github.com/ahmadawais/wp-release-it/commit/f9d4ec1b517419b2fc41fd9ddbf90a559a68cfaf) <br>
+
+![📖 DOC:](https://img.shields.io/badge/-DOCS-gray.svg?colorB=978CD4)
+
+> 📖 Changelog update [`6f03914`](https://github.com/ahmadawais/wp-release-it/commit/6f03914eea2e42940e54894165a6fac370727956) <br>
 
 <br>
 
