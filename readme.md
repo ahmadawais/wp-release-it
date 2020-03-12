@@ -37,24 +37,34 @@ npx wp-release-it
 
 # Power mode: specify the flags and run in one go.
 
-# 1. Update the "Tested up to" version to the latest version of WordPress.
-npx wp-release-it --latest
-npx wp-release-it -l
+# 1. Release a new version of the WordPress plugin.
+npx wp-release-it major      # Releases a major version.      E.g. from 1.4.7 to 2.0.0
+npx wp-release-it premajor   # Releases a major version.      E.g. from 1.4.7 to 2.0.0-0
+npx wp-release-it minor      # Releases a minor version.      E.g. from 1.4.7 to 1.5.0
+npx wp-release-it preminor   # Releases a preminor version.   E.g. from 1.4.7 to 1.5.0-0
+npx wp-release-it patch      # Releases a patch version.      E.g. from 1.4.7 to 1.4.8
+npx wp-release-it prepatch   # Releases a prepatch version.   E.g. from 1.4.7 to 1.4.8-0
+npx wp-release-it prerelease # Releases a prerelease version. E.g. from 1.4.7 to 1.4.8-0
 
-# 2. Set a custom version to as the "Tested up to" version (e.g. setting 5.4.0 before its release).
-npx wp-release-it --custom 5.4.0
-npx wp-release-it -c 5.4.0
-
-# 3. Release a new version of the WordPress plugin.
+# 2. Or define a custom tag to release a custom version.
 npx wp-release-it --tag 2.5.0
 npx wp-release-it -t 2.5.0
 
-# 4. You can also run multiple commands at once:
+# 3. Update the "Tested up to" version to the latest version of WordPress.
+npx wp-release-it --latest
+npx wp-release-it -l
+
+# 4. Set a custom version to as the "Tested up to" version (e.g. setting 5.4.0 before its release).
+npx wp-release-it --custom 5.4.0
+npx wp-release-it -c 5.4.0
+
+# 5. You can also run multiple commands at once:
 npx wp-release-it -t 2.5.0 -c 5.4.0
 npx wp-release-it -t 2.5.0 -l
 
-# Help/usage.
-npx wp-release-it --help
+# 6. Help/usage/version.
+npx wp-release-it --help    # Prints the wp-release-it help.
+npx wp-release-it --version # Prints the wp-release-it version.
 ```
 
 👋 **MOAR**: There's more to come. I use `wp-release-it` by first setting up [`wp-continuous-deployment`](https://github.com/ahmadawais/wp-continuous-deployment) and I am still considering adding the ability to auto `git tag` and `git commit` the release. Provide me feedback on this via [Twitter →](https://twitter.com/MrAhmadAwais/)

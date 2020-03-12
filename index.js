@@ -58,6 +58,9 @@ const dim = chalk.dim;
 	if (command) {
 		const prev = await getPluginVersion();
 		const newVersion = inc(prev, command);
+		console.log('newVersion: ', newVersion);
+		process.exit(0);
+
 		await verValid(newVersion);
 		await setPluginVersion(newVersion);
 		await gitPluginRelease(newVersion);
