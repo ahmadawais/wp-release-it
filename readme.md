@@ -67,7 +67,7 @@ npx wp-release-it --help    # Prints the wp-release-it help.
 npx wp-release-it --version # Prints the wp-release-it version.
 ```
 
-👋 **MOAR**: There's more to come. I use `wp-release-it` by first setting up [`wp-continuous-deployment`](https://github.com/ahmadawais/wp-continuous-deployment). Provide me feedback on this via [Twitter →](https://twitter.com/MrAhmadAwais/)
+👋 **MOAR**: I use `wp-release-it` by first setting up [`wp-continuous-deployment`](https://github.com/ahmadawais/wp-continuous-deployment). [Share feedback on Twitter →](https://twitter.com/MrAhmadAwais/)
 
 <br>
 
