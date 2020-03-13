@@ -14,7 +14,7 @@
 	},
 	"main": "index.js",
 	"files": [
-		"index.js"
+		"index.js",
 		"utils/*"
 	],
 	"keywords": [
