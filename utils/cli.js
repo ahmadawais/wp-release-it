@@ -3,11 +3,17 @@ const chalk = require('chalk');
 const green = chalk.bold.green;
 const yellow = chalk.bold.yellow;
 const cyan = chalk.bold.cyan;
+const dim = chalk.dim;
 
 module.exports = meow(
 	`
 	Usage
+
+	  ${dim(`# Interactive mode.`)}
 	  ${green(`npx wp-release-it`)}
+
+	  ${dim(`# Power user mode.`)}
+	  ${green(`npx wp-release-it`)} ${cyan(`<command>`)} ${yellow(`[--option]`)}
 
 	Commands
 	  ${cyan(`major`)}         Release a new major version
