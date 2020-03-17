@@ -29,12 +29,34 @@ I have released a video course to help you become a better developer — <a href
 
 <br>
 
+### RELEASE: [0.7.1](https://github.com/ahmadawais/wp-release-it/compare/0.7.0...0.7.1)
+
+![🐛 FIX:](https://img.shields.io/badge/-FIX-gray.svg?colorB=ff6347)
+
+> 🐛 Exit [`ecf9643`](https://github.com/ahmadawais/wp-release-it/commit/ecf9643340c489376ebe47320ddf93164b3c8c89) <br>
+
+![📖 DOC:](https://img.shields.io/badge/-DOCS-gray.svg?colorB=978CD4)
+
+> 📖 Help lingo [`cefdcf0`](https://github.com/ahmadawais/wp-release-it/commit/cefdcf0b83614ce502c4191e1c96c2fb959f1257) <br>
+> 📖 MOAR lingo [`480e082`](https://github.com/ahmadawais/wp-release-it/commit/480e08267bf9b047d9338002126fa6f53c96e26f) <br>
+> 📖 MOAR lingo [`194d476`](https://github.com/ahmadawais/wp-release-it/commit/194d4769d4e44077c4603c06a6b275d966edcfe1) <br>
+
+<br>
+
+[![hr](https://raw.githubusercontent.com/ahmadawais/stuff/master/images/git/hr.png)](/)
+
+<br>
+
 ### RELEASE: [0.7.0](https://github.com/ahmadawais/wp-release-it/compare/0.6.0...0.7.0)
 
 ![🐛 FIX:](https://img.shields.io/badge/-FIX-gray.svg?colorB=ff6347)
 
 > 🐛 Files [`36c4011`](https://github.com/ahmadawais/wp-release-it/commit/36c40117b8fc7e6952fa55ae0c465ff94934029a) <br>
 > 🐛 Files [`cc84cfd`](https://github.com/ahmadawais/wp-release-it/commit/cc84cfdb048e344581e27b5e3a3ae2fc101b30b9) <br>
+
+![📖 DOC:](https://img.shields.io/badge/-DOCS-gray.svg?colorB=978CD4)
+
+> 📖 Changelog update [`da2bb14`](https://github.com/ahmadawais/wp-release-it/commit/da2bb145909298ba6ad1b14c33613e1b5c5e6657) <br>
 
 <br>
 
