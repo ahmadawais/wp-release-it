@@ -41,7 +41,7 @@ const dim = chalk.dim;
 			bgColor: `#d54e21`,
 			color: `#FFFFFF`,
 			bold: true,
-			clear: true,
+			clear: false,
 			version: `v${pkgJSON.version}`
 		}
 	);
