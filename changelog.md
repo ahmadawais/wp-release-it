@@ -29,6 +29,18 @@ I have released a video course to help you become a better developer — <a href
 
 <br>
 
+### RELEASE: [0.7.2](https://github.com/ahmadawais/wp-release-it/compare/0.7.1...0.7.2)
+
+![📦 NEW:](https://img.shields.io/badge/-NEW-gray.svg?colorB=3778FF)
+
+> 📦 No clear [`b5d28ae`](https://github.com/ahmadawais/wp-release-it/commit/b5d28aecc98a892fdca263e3312acf0ae999edc7) <br>
+
+<br>
+
+[![hr](https://raw.githubusercontent.com/ahmadawais/stuff/master/images/git/hr.png)](/)
+
+<br>
+
 ### RELEASE: [0.7.1](https://github.com/ahmadawais/wp-release-it/compare/0.7.0...0.7.1)
 
 ![🐛 FIX:](https://img.shields.io/badge/-FIX-gray.svg?colorB=ff6347)
@@ -37,6 +49,7 @@ I have released a video course to help you become a better developer — <a href
 
 ![📖 DOC:](https://img.shields.io/badge/-DOCS-gray.svg?colorB=978CD4)
 
+> 📖 Changelog update [`f0f3006`](https://github.com/ahmadawais/wp-release-it/commit/f0f3006ee20458df8417866bc81cbbf578022a68) <br>
 > 📖 Help lingo [`cefdcf0`](https://github.com/ahmadawais/wp-release-it/commit/cefdcf0b83614ce502c4191e1c96c2fb959f1257) <br>
 > 📖 MOAR lingo [`480e082`](https://github.com/ahmadawais/wp-release-it/commit/480e08267bf9b047d9338002126fa6f53c96e26f) <br>
 > 📖 MOAR lingo [`194d476`](https://github.com/ahmadawais/wp-release-it/commit/194d4769d4e44077c4603c06a6b275d966edcfe1) <br>
